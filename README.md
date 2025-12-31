@@ -1,48 +1,56 @@
-# Planck's Personal Homepage
+# Personal Homepage
 
-This is the source code for my personal homepage hosted on GitHub Pages at [plke.github.io](https://plke.github.io).
+This is a simple personal homepage template for deployment on GitHub Pages. The page has a two-column layout:
 
-## About
-
-This simple, responsive personal website showcases my academic background, publications, research interests, and contact information. It is designed to be deployed directly to GitHub Pages.
+- Left side: Avatar, name, contact information, and other profile links
+- Right side: Personal introduction, published articles, research areas, and other content
 
 ## Features
 
-- Fully responsive design that works on mobile, tablet, and desktop
-- Clean, modern interface with a focus on content
-- Sections for:
-  - Biography and educational background
-  - Publications
-  - Research interests
-  - Technical skills
-  - Contact information
+- Responsive design, supporting mobile devices
+- Easy to customize and extend
+- Built-in admin panel for easy content management
+- Modular code structure
 
-## Structure
+## Usage
 
-The site consists of:
+1. Clone this project to your GitHub account
+2. Modify [index.html](file:///e/workspace/Plke.github.io/index.html), [styles.css](file:///e/workspace/Plke.github.io/styles.css), and [script.js](file:///e/workspace/Plke.github.io/script.js) to suit your needs
+3. Update your personal information in the `profileConfig` object in [script.js](file:///e/workspace/Plke.github.io/script.js)
+4. Enable GitHub Pages for deployment
 
-- `index.html` - Main HTML structure
-- `styles.css` - All styling and responsive design
-- `script.js` - Interactive elements and functionality
-- `README.md` - This file
+## Customization
 
-## How to Customize
+### Modify Personal Information
 
-To customize this site for your own use:
+Edit the `profileConfig` object in [script.js](file:///e/workspace/Plke.github.io/script.js):
 
-1. Update the profile image in [index.html](index.html) by replacing the placeholder image with your own
-2. Update your email address in [script.js](script.js) in the emailPlaceholder section
-3. Modify the content in [index.html](index.html) to reflect your information
-4. Update colors and styling in [styles.css](styles.css) as desired
+- `profile`: Basic information (name, email, avatar)
+- `contacts`: Contact information list
+- `links`: Other profile links
+- `articles`: Published articles list
+- `researchAreas`: Research areas
+- `skills`: Professional skills
+
+### Content Management
+
+There is an "Admin" button in the bottom right corner of the page. After clicking it, you can:
+
+- Add new contacts
+- Add other profile links
+- Add new articles
+
+## File Structure
+
+- [index.html](file:///e/workspace/Plke.github.io/index.html) - Main page structure
+- [styles.css](file:///e/workspace/Plke.github.io/styles.css) - Style definitions
+- [script.js](file:///e/workspace/Plke.github.io/script.js) - JavaScript functions and configuration
+- [README.md](file:///e/workspace/Plke.github.io/README.md) - Project documentation
 
 ## Deployment
 
-To deploy to GitHub Pages:
-
-1. Create a repository named `username.github.io` (replace `username` with your GitHub username)
-2. Push this code to the main branch of your repository
-3. In repository settings, enable GitHub Pages from the main branch
+Push this project to a GitHub repository and enable GitHub Pages in the repository settings, selecting "master branch" or "gh-pages" branch as the source.
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is licensed under the MIT License.
